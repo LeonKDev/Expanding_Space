@@ -12,6 +12,7 @@ public class CrystalRotation : MonoBehaviour
     float x;
     float y;
     float z;
+
     // Update is called once per frame
     void Update()
     {
