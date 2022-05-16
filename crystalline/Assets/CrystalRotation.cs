@@ -22,5 +22,6 @@ public class CrystalRotation : MonoBehaviour
         transform.position = new Vector3(x, y, z) + center.transform.position;
 
         phi -= dPhi * Time.deltaTime;
+
     }
 }
