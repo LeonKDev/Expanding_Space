@@ -106,6 +106,7 @@ GameObject:
   - component: {fileID: 1863528751473216052}
   - component: {fileID: 1863528751473216010}
   - component: {fileID: 1863528751473216053}
+  - component: {fileID: 1821128905846427226}
   m_Layer: 0
   m_Name: CrystalHolder
   m_TagString: Untagged
@@ -159,6 +160,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nonActiveCrystal: {fileID: 1863528751341409834}
   activeCrystal: {fileID: 1863528752528077820}
+  interactionCooldown: 1
+--- !u!114 &1821128905846427226
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1863528751473216055}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ccffc5642b0898c4fb8ce6b54f839e99, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nonActiveCrystal: {fileID: 1863528751341409834}
+  activeCrystal: {fileID: 1863528752528077820}
+  interactionCooldown: 1
 --- !u!1 &1863528751741632626
 GameObject:
   m_ObjectHideFlags: 0
@@ -378,6 +395,7 @@ GameObject:
   - component: {fileID: 1863528752611089355}
   - component: {fileID: 1863528752611089358}
   - component: {fileID: 1863528752611089353}
+  - component: {fileID: 8294063880626517269}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -447,3 +465,18 @@ CapsuleCollider:
   m_Height: 2.08
   m_Direction: 1
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &8294063880626517269
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1863528752611089354}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 32042a07490505a4fa443c0eed3ed4ca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  energy: 100
+  energyBar: {fileID: 0}
+  dValue: 2

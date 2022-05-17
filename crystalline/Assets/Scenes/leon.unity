@@ -1665,6 +1665,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1863528751473216053, guid: f352184e29e6c254cabf45322d38f2b2, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1863528752528077820, guid: f352184e29e6c254cabf45322d38f2b2, type: 3}
       propertyPath: m_IsActive
       value: 0
@@ -1717,5 +1721,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 8294063880626517269, guid: f352184e29e6c254cabf45322d38f2b2, type: 3}
+      propertyPath: dValue
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8294063880626517269, guid: f352184e29e6c254cabf45322d38f2b2, type: 3}
+      propertyPath: energy
+      value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 8294063880626517269, guid: f352184e29e6c254cabf45322d38f2b2, type: 3}
+      propertyPath: energyBar
+      value: 
+      objectReference: {fileID: 1193302603}
+    m_RemovedComponents:
+    - {fileID: 1863528751473216053, guid: f352184e29e6c254cabf45322d38f2b2, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: f352184e29e6c254cabf45322d38f2b2, type: 3}

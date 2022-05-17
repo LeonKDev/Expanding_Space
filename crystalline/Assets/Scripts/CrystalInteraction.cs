@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class CrystalInteraction : MonoBehaviour
 {
@@ -10,12 +11,12 @@ public class CrystalInteraction : MonoBehaviour
 
     private bool isCrystalActive;
     private float lastInteractionTime = -10;
-
+   
     private void Update()
     {
         if (Input.GetMouseButtonDown(1))
         {
-            SwitchCrystal();
+            SwitchCrystal();         
         }
     }
 
@@ -37,5 +38,5 @@ public class CrystalInteraction : MonoBehaviour
         }
 
         lastInteractionTime = Time.time;
-    }
+    } 
 }
