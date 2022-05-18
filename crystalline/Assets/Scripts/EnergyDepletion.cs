@@ -38,7 +38,6 @@ public class EnergyDepletion : MonoBehaviour
 
     private void IncreaseEnergy()
      {
-
          energy -= dValue * Time.deltaTime;
      }
     
