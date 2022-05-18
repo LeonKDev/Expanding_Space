@@ -1,0 +1,80 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+using UnityEngine.UI;
+
+public class crystal : MonoBehaviour
+{
+    public GameObject nonActiveCrystal;
+    public GameObject activeCrystal;
+    public float interactionCooldown = 1f;
+
+    private bool isCrystalActive;
+    private float lastInteractionTime = -10;
+
+    public float energy;
+    float maxEnergy;
+
+    public Slider energyBar;
+    public float dValue;
+    public bool energyDown;
+
+    void Start()
+    {
+        energyDown = false;
+        maxEnergy = energy;
+        energyBar.maxValue = maxEnergy;
+        energyBar.value = energy;
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+        energyBar.value = energy;
+
+        if (Input.GetMouseButtonDown(1) && energyDown == false)
+            energyDown = true;
+        else if (Input.GetMouseButtonDown(1) && energyDown == true)
+            energyDown = false;
+
+        if (energyDown == true)
+        {
+            DecreaseEnergy();
+        }
+
+        if (Input.GetMouseButtonDown(1))
+        {
+            SwitchCrystal();
+
+        }
+        if (energy < 0.00)
+        {
+            SwitchCrystal();
+        }   
+    }
+    private void DecreaseEnergy()
+    {
+        if (energy > 0)
+            energy -= dValue * Time.deltaTime;
+    }
+
+    private void SwitchCrystal()
+    {
+        if (Time.time < lastInteractionTime + interactionCooldown) return;
+
+        isCrystalActive = !isCrystalActive;
+
+        if (isCrystalActive)
+        {
+            nonActiveCrystal.SetActive(false);
+            activeCrystal.SetActive(true);
+        }
+        else
+        {
+            nonActiveCrystal.SetActive(true);
+            activeCrystal.SetActive(false);
+        }
+
+        lastInteractionTime = Time.time;
+    }
+}
