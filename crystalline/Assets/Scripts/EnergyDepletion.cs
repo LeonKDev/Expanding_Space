@@ -10,35 +10,43 @@ public class EnergyDepletion : MonoBehaviour
 
     public Slider energyBar;
     public float dValue;
+    public bool energyDown;
+
 
     // Start is called before the first frame update
     void Start()
     {
+        energyDown = false;
         maxEnergy = energy;
         energyBar.maxValue = maxEnergy;
-        energyBar.value = energy;
+        energyBar.value = energy;  
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetMouseButtonDown(1))
+        if (Input.GetMouseButtonDown(1) && energyDown == false)
+            energyDown = true;
+        else if (Input.GetMouseButtonDown(1) && energyDown == true)
+            energyDown = false;
+
+        if (energyDown == true)
+        {
             DecreaseEnergy();
-        else if (energy != maxEnergy)
-            IncreaseEnergy();
+        }
 
         energyBar.value = energy;
 
     }
     private void DecreaseEnergy()
     {
-        if(energy != 0)
-        energy -= dValue * Time.deltaTime;
+        if(energy > 0)
+            energy -= dValue * Time.deltaTime;
     }
 
-    private void IncreaseEnergy()
-     {
-         energy -= dValue * Time.deltaTime;
-     }
+    //private void IncreaseEnergy()
+    // {
+    //     energy -= dValue * Time.deltaTime;
+    // }
     
 }

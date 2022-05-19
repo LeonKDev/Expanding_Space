@@ -92,6 +92,7 @@ GameObject:
   - component: {fileID: 1863528751473216052}
   - component: {fileID: 1863528751473216010}
   - component: {fileID: 1821128905846427226}
+  - component: {fileID: 580382725}
   m_Layer: 0
   m_Name: CrystalHolder
   m_TagString: Untagged
@@ -138,7 +139,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1863528751473216055}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ccffc5642b0898c4fb8ce6b54f839e99, type: 3}
   m_Name: 
@@ -146,6 +147,25 @@ MonoBehaviour:
   nonActiveCrystal: {fileID: 1863528751341409834}
   activeCrystal: {fileID: 1863528752528077820}
   interactionCooldown: 1
+--- !u!114 &580382725
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1863528751473216055}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a43eec11c2713584f9cff13bffbedb64, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nonActiveCrystal: {fileID: 1863528751341409834}
+  activeCrystal: {fileID: 1863528752528077820}
+  interactionCooldown: 2
+  energy: 100
+  energyBar: {fileID: 0}
+  dValue: 10
+  energyDown: 0
 --- !u!1 &1863528751741632626
 GameObject:
   m_ObjectHideFlags: 0
@@ -275,7 +295,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1863528752528077821
 Transform:
   m_ObjectHideFlags: 0
@@ -354,7 +374,7 @@ GameObject:
   - component: {fileID: 8294063880626517269}
   m_Layer: 0
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -366,7 +386,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1863528752611089354}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -7.1771135, y: 1.41, z: -0.8307514}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -406,7 +426,7 @@ Rigidbody:
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 120
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
 --- !u!136 &1863528752611089353
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -418,9 +438,9 @@ CapsuleCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   m_Radius: 0.52
-  m_Height: 2.08
+  m_Height: 2.36
   m_Direction: 1
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Center: {x: 0, y: 0.07, z: 0}
 --- !u!114 &8294063880626517269
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -428,7 +448,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1863528752611089354}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 32042a07490505a4fa443c0eed3ed4ca, type: 3}
   m_Name: 
@@ -436,3 +456,4 @@ MonoBehaviour:
   energy: 30
   energyBar: {fileID: 0}
   dValue: 2
+  energyDown: 0
