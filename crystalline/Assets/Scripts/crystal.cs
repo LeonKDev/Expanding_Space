@@ -32,12 +32,7 @@ public class crystal : MonoBehaviour
     {
         energyBar.value = energy;
 
-        if (Input.GetMouseButtonDown(1) && energyDown == false)
-            energyDown = true;
-        else if (Input.GetMouseButtonDown(1) && energyDown == true)
-            energyDown = false;
-
-        if (energyDown == true)
+        if (isCrystalActive)
         {
             DecreaseEnergy();
         }
