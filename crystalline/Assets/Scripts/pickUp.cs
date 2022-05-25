@@ -5,13 +5,26 @@ using UnityEngine;
 public class pickUp : MonoBehaviour
 {
     public bool pickedUp = false;
-    private void OnCollisionEnter(Collision collision)
+    public GameObject test;
+    public GameObject player;
+
+    private void OnTriggerEnter(Collider other)
     {
-        if (collision.gameObject.tag == "Player")
+        if (other.gameObject.tag == "Item" && pickedUp == false)
         {
+
             pickedUp = true;
             Debug.Log("touch");
-            Destroy(gameObject);
+            Destroy(other.gameObject);
+        }
+
+        if (pickedUp == true)
+        {
+            test.SetActive(true);
+        }
+        else if (pickedUp == false)
+        {
+            test.SetActive(false);
         }
     }
 }
