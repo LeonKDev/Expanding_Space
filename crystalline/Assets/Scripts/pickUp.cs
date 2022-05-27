@@ -6,8 +6,7 @@ public class pickUp : MonoBehaviour
 {
     public bool pickedUp = false;
     public GameObject test;
-    public GameObject player;
-
+    
     private void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.tag == "Item" && pickedUp == false)
