@@ -1,14 +1,22 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class CrystalRecharge : MonoBehaviour
 {
-    private void OnCollisionEnter(Collision collision)
+    public crystal Crystal;
+    private void OnTriggerEnter(Collider other)
     {
-        if (collision.gameObject.name == "CrystalMeateore")
+        if (other.gameObject.tag == "Recharge")
         {
-            Debug.Log("charge");
+            Debug.Log("Recharge");
+            Crystal.energy = 100;
         }
+    }
+
+    private void Start()
+    {
+        Debug.Log(Crystal.energy);
     }
 }
