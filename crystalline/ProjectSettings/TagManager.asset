@@ -8,6 +8,10 @@ TagManager:
   - Item
   - recharge
   - Recharge
+  - Item1
+  - Item2
+  - Item4
+  - Item3
   layers:
   - Default
   - TransparentFX
