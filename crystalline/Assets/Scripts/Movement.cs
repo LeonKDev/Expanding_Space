@@ -9,6 +9,8 @@ public class Movement : MonoBehaviour
     public float jumpPower = 8;
     public bool canJump = true;
     public float movementSpeed = 3;
+    public float runningSpeed = 5;
+    
     void Start()
     {
         rb = gameObject.GetComponent<Rigidbody>();
@@ -17,7 +19,11 @@ public class Movement : MonoBehaviour
 
     void Update()
     {
-      
+        if(Input.GetKeyDown(KeyCode.LeftShift))
+        {
+            
+        }
+
         if (Input.GetKey(KeyCode.A))
         {
             
