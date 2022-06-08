@@ -9,8 +9,16 @@ public class Movement : MonoBehaviour
     public float jumpPower = 8;
     public bool canJump = true;
     public float movementSpeed = 3;
+<<<<<<< HEAD
     public float runningSpeed = 5;
     
+=======
+    public float RotateValue1 = -1;
+    public float RotateValue2 = 1;
+
+    public GameObject Player;
+
+>>>>>>> 9aa23d1d9aba07aa660e1dd6f7e43c54f8a3b8ca
     void Start()
     {
         rb = gameObject.GetComponent<Rigidbody>();
@@ -19,30 +27,50 @@ public class Movement : MonoBehaviour
 
     void Update()
     {
+<<<<<<< HEAD
         if(Input.GetKeyDown(KeyCode.LeftShift))
         {
             
         }
 
+=======
+        if (Input.GetAxisRaw("Horizontal") == RotateValue1)
+        {
+            Vector3 scale = Player.GetComponent<Transform>().localScale;
+            Player.GetComponent<Transform>().localScale = new Vector3(-0.3f, scale.y, scale.z);
+        }
+
+        if (Input.GetAxisRaw("Horizontal") == RotateValue2)
+        {
+            Vector3 scale = Player.GetComponent<Transform>().localScale;
+            Player.GetComponent<Transform>().localScale = new Vector3(0.3f, scale.y, scale.z);
+        }
+        
+      
+>>>>>>> 9aa23d1d9aba07aa660e1dd6f7e43c54f8a3b8ca
         if (Input.GetKey(KeyCode.A))
         {
             
             transform.position += new Vector3(-movementSpeed, 0, 0) * Time.deltaTime;
         }
+
         if (Input.GetKey(KeyCode.D))
         {
             
             transform.position += new Vector3(movementSpeed, 0, 0) * Time.deltaTime;
         }
-        if (Input.GetKeyDown(KeyCode.W) && canJump == true)
+
+        if (Input.GetKeyDown(KeyCode.Space) && canJump == true)
         {
             
             rb.velocity = new Vector3(0, jumpPower, 0);
         }
+
         if (Input.GetKeyDown(KeyCode.S) && canJump == true)
         {
 
         }
+
     }
     private void OnCollisionEnter(Collision collision)
     {
