@@ -1,12 +1,8 @@
 {
   "dependencies": {
-<<<<<<< HEAD
-    "com.unity.2d.psdimporter": "4.1.3",
-=======
     "com.unity.2d.animation": "5.1.1",
     "com.unity.2d.psdimporter": "4.2.0",
     "com.unity.2d.spriteshape": "5.2.0",
->>>>>>> 9aa23d1d9aba07aa660e1dd6f7e43c54f8a3b8ca
     "com.unity.collab-proxy": "1.15.12",
     "com.unity.ide.rider": "2.0.7",
     "com.unity.ide.visualstudio": "2.0.14",
