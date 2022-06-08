@@ -9,16 +9,16 @@ public class Movement : MonoBehaviour
     public float jumpPower = 8;
     public bool canJump = true;
     public float movementSpeed = 3;
-<<<<<<< HEAD
+
     public float runningSpeed = 5;
     
-=======
+
     public float RotateValue1 = -1;
     public float RotateValue2 = 1;
 
     public GameObject Player;
 
->>>>>>> 9aa23d1d9aba07aa660e1dd6f7e43c54f8a3b8ca
+
     void Start()
     {
         rb = gameObject.GetComponent<Rigidbody>();
@@ -27,13 +27,13 @@ public class Movement : MonoBehaviour
 
     void Update()
     {
-<<<<<<< HEAD
+
         if(Input.GetKeyDown(KeyCode.LeftShift))
         {
             
         }
 
-=======
+
         if (Input.GetAxisRaw("Horizontal") == RotateValue1)
         {
             Vector3 scale = Player.GetComponent<Transform>().localScale;
@@ -47,7 +47,7 @@ public class Movement : MonoBehaviour
         }
         
       
->>>>>>> 9aa23d1d9aba07aa660e1dd6f7e43c54f8a3b8ca
+
         if (Input.GetKey(KeyCode.A))
         {
             
