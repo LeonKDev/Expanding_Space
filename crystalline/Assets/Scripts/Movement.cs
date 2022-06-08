@@ -10,7 +10,7 @@ public class Movement : MonoBehaviour
     public bool canJump = true;
     public float movementSpeed = 3;
 <<<<<<< HEAD
-    public float runningSpeed = 5;
+   
     
 =======
     public float RotateValue1 = -1;
@@ -28,10 +28,7 @@ public class Movement : MonoBehaviour
     void Update()
     {
 <<<<<<< HEAD
-        if(Input.GetKeyDown(KeyCode.LeftShift))
-        {
-            
-        }
+       
 
 =======
         if (Input.GetAxisRaw("Horizontal") == RotateValue1)
