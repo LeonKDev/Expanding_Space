@@ -9,8 +9,7 @@ public class movement : MonoBehaviour
     public float jumpPower = 8;
     public bool canJump = true;
 
-    public float movementSpeed = 3;
-    public float runningSpeed = 5;
+    public float movementSpeed;
 
     public float RotateValue1 = -1;
     public float RotateValue2 = 1;
@@ -43,7 +42,7 @@ public class movement : MonoBehaviour
         }
         if (Input.GetKeyUp(KeyCode.LeftShift))
         {
-            movementSpeed = 3f;
+            movementSpeed = 5f;
         }
 
         if (Input.GetKey(KeyCode.A))
