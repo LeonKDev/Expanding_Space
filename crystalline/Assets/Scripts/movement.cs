@@ -4,12 +4,18 @@ using UnityEngine;
 
 public class movement : MonoBehaviour
 {
-
+    public GameObject Player;
     private Rigidbody rb;
     public float jumpPower = 8;
     public bool canJump = true;
+
     public float movementSpeed = 3;
     public float runningSpeed = 5;
+
+    public float RotateValue1 = -1;
+    public float RotateValue2 = 1;
+
+    
 
     void Start()
     {
@@ -19,6 +25,18 @@ public class movement : MonoBehaviour
 
     void Update()
     {
+        if (Input.GetAxisRaw("Horizontal") == RotateValue1)
+        {
+            Vector3 scale = Player.GetComponent<Transform>().localScale;
+            Player.GetComponent<Transform>().localScale = new Vector3(-0.3f, scale.y, scale.z);
+        }
+
+        if (Input.GetAxisRaw("Horizontal") == RotateValue2)
+        {
+            Vector3 scale = Player.GetComponent<Transform>().localScale;
+            Player.GetComponent<Transform>().localScale = new Vector3(0.3f, scale.y, scale.z);
+        }
+
         if (Input.GetKeyDown(KeyCode.LeftShift))
         {
             movementSpeed = 10.0f;
