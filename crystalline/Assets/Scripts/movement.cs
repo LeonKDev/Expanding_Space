@@ -38,7 +38,7 @@ public class movement : MonoBehaviour
             Player.GetComponent<Transform>().localScale = new Vector3(0.3f, scale.y, scale.z);
         }
 
-        if (Input.GetKeyDown(KeyCode.LeftShift))
+        if (Input.GetKeyDown(KeyCode.LeftShift) && (canJump = true))
         {
             movementSpeed = 10.0f;
         }
@@ -57,7 +57,7 @@ public class movement : MonoBehaviour
             
             transform.position += new Vector3(movementSpeed, 0, 0) * Time.deltaTime;
         }
-        if (Input.GetKeyDown(KeyCode.Space) && canJump == true)
+        if (Input.GetKey(KeyCode.Space) && canJump == true)
         {
 
             rb.velocity = new Vector3(0, jumpPower, 0);
