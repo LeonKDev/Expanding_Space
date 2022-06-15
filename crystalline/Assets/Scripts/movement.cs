@@ -38,7 +38,7 @@ public class movement : MonoBehaviour
             Player.GetComponent<Transform>().localScale = new Vector3(0.3f, scale.y, scale.z);
         }
 
-        if (Input.GetKeyDown(KeyCode.LeftShift) && (canJump = true))
+        if (Input.GetKeyDown(KeyCode.LeftShift))
         {
             movementSpeed = 10.0f;
         }
