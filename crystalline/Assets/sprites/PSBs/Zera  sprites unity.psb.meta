@@ -25,6 +25,7 @@ ScriptedImporter:
     streamingMipmaps: 1
     streamingMipmapsPriority: 0
     vTOnly: 0
+    ignoreMasterTextureLimit: 0
     nPOTScale: 1
     sRGBTexture: 1
     spriteMode: 2
@@ -79,7 +80,6 @@ ScriptedImporter:
       width: 0
       height: 0
     spriteID: 
-    internalID: 0
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -103,13 +103,16 @@ ScriptedImporter:
       width: 205
       height: 301
     spriteID: 717e210269c5ddb4e9fbf003e0232594
-    internalID: 0
     spriteBone:
     - name: Hoofd
+      guid: 
       position: {x: 86.45831, y: 43.875793, z: 0}
       rotation: {x: 0, y: 0, z: -0.51278645, w: -0.8585162}
       length: 94.74747
       parentId: -1
+      color:
+        serializedVersion: 2
+        rgba: 0
     spriteOutline: []
     vertices:
     - position: {x: 84.465, y: 0.46499634}
@@ -699,18 +702,25 @@ ScriptedImporter:
       width: 203
       height: 200
     spriteID: 5d1a5e0396f30f943a010de5f0f4a55f
-    internalID: 0
     spriteBone:
     - name: Oor1_1
+      guid: 
       position: {x: 175.6026, y: 11.650879, z: 0}
       rotation: {x: 0, y: 0, z: -0.93514615, w: -0.35426235}
       length: 111.37882
       parentId: -1
+      color:
+        serializedVersion: 2
+        rgba: 0
     - name: Oor1_2
+      guid: 
       position: {x: 111.37864, y: 0.000029386945, z: 0}
       rotation: {x: 0, y: 0, z: -0.08291682, w: 0.9965565}
       length: 130.03554
       parentId: 0
+      color:
+        serializedVersion: 2
+        rgba: 0
     spriteOutline: []
     vertices:
     - position: {x: 201, y: 5}
@@ -1217,18 +1227,25 @@ ScriptedImporter:
       width: 199
       height: 200
     spriteID: 98714d2c2a8ca1a4bbd431eeb9f4543b
-    internalID: 0
     spriteBone:
     - name: Oor2_1
+      guid: 
       position: {x: 186.27106, y: 15.506409, z: 0}
       rotation: {x: 0, y: 0, z: -0.9258004, w: -0.37801298}
       length: 112.31099
       parentId: -1
+      color:
+        serializedVersion: 2
+        rgba: 0
     - name: Oor2_2
+      guid: 
       position: {x: 112.31112, y: -0.00013308134, z: 0}
       rotation: {x: 0, y: 0, z: 0.00845899, w: 0.99996424}
       length: 125.96385
       parentId: 0
+      color:
+        serializedVersion: 2
+        rgba: 0
     spriteOutline: []
     vertices:
     - position: {x: 197, y: 2}
@@ -1756,13 +1773,16 @@ ScriptedImporter:
       width: 158
       height: 179
     spriteID: 0b9c3ec55a3377745b8083d5f880d3e6
-    internalID: 0
     spriteBone:
     - name: Nek
+      guid: 
       position: {x: 57.998352, y: 57.87024, z: 0}
       rotation: {x: 0, y: 0, z: -0.6, w: -0.8}
       length: 80.21411
       parentId: -1
+      color:
+        serializedVersion: 2
+        rgba: 0
     spriteOutline: []
     vertices:
     - position: {x: 51.994995, y: 2.0059967}
@@ -2273,18 +2293,25 @@ ScriptedImporter:
       width: 219
       height: 373
     spriteID: 98a3e13c0edeed041af22f3ef55ec5fb
-    internalID: 0
     spriteBone:
     - name: chest2
+      guid: 
       position: {x: 98.58099, y: 129.50159, z: 0}
       rotation: {x: 0, y: 0, z: -0.64715785, w: -0.76235604}
       length: 128.44241
       parentId: -1
+      color:
+        serializedVersion: 2
+        rgba: 0
     - name: chest1
+      guid: 
       position: {x: 128.44243, y: -0.000014215941, z: 0}
       rotation: {x: 0, y: 0, z: 0.16338544, w: 0.9865624}
       length: 87.825676
       parentId: 0
+      color:
+        serializedVersion: 2
+        rgba: 0
     spriteOutline: []
     vertices:
     - position: {x: 87.13, y: 4.673004}
@@ -2842,18 +2869,25 @@ ScriptedImporter:
       width: 179
       height: 228
     spriteID: 9fa54171e011e294682f429c05880e3f
-    internalID: 0
     spriteBone:
     - name: Haar1
+      guid: 
       position: {x: 150.39044, y: 104.59906, z: 0}
       rotation: {x: 0, y: 0, z: -0.98902774, w: -0.14773011}
       length: 60.38988
       parentId: -1
+      color:
+        serializedVersion: 2
+        rgba: 0
     - name: Haar2
+      guid: 
       position: {x: 60.389893, y: -0.000015572274, z: 0}
       rotation: {x: 0, y: 0, z: 0.025780294, w: 0.9996677}
       length: 52.91691
       parentId: 0
+      color:
+        serializedVersion: 2
+        rgba: 0
     spriteOutline: []
     vertices:
     - position: {x: 109.34601, y: 9.554016}
@@ -3299,13 +3333,16 @@ ScriptedImporter:
       width: 173
       height: 258
     spriteID: 899e3cfcde320e74b84121c0139970fc
-    internalID: 0
     spriteBone:
     - name: Leg1_voor
+      guid: 
       position: {x: 65.72531, y: 217.8117, z: 0}
       rotation: {x: 0, y: 0, z: -0.6729026, w: 0.7397312}
       length: 186.93103
       parentId: -1
+      color:
+        serializedVersion: 2
+        rgba: 0
     spriteOutline: []
     vertices:
     - position: {x: 78.959015, y: 1.1879883}
@@ -3672,23 +3709,34 @@ ScriptedImporter:
       width: 146
       height: 326
     spriteID: f567d7d03cafc1d4f840f684cbeb542a
-    internalID: 0
     spriteBone:
     - name: Hoef1
+      guid: 
       position: {x: 141.06697, y: 0.00009667896, z: 0}
       rotation: {x: 0, y: 0, z: 0.06318649, w: 0.9980018}
       length: 77.53822
       parentId: 1
+      color:
+        serializedVersion: 2
+        rgba: 0
     - name: Leg1_achter
+      guid: 
       position: {x: 89.62458, y: -0.00001154524, z: 0}
       rotation: {x: 0, y: 0, z: 0.5110929, w: 0.8595255}
       length: 141.06708
       parentId: 2
+      color:
+        serializedVersion: 2
+        rgba: 0
     - name: Leg1_tussen_bone
+      guid: 
       position: {x: 92.37244, y: 285.7155, z: 0}
       rotation: {x: 0, y: 0, z: -0.9214392, w: 0.3885227}
       length: 89.62447
       parentId: -1
+      color:
+        serializedVersion: 2
+        rgba: 0
     spriteOutline: []
     vertices:
     - position: {x: 106.934, y: 1.4450073}
@@ -4404,28 +4452,43 @@ ScriptedImporter:
       width: 171
       height: 357
     spriteID: 68992925c83f74b4987cd23ba2a0bf57
-    internalID: 0
     spriteBone:
     - name: chest2
+      guid: 
       position: {x: -24.304354, y: -5.4370737, z: 0}
       rotation: {x: 0, y: 0, z: -0.7753096, w: 0.63158137}
       length: 128.4424
       parentId: 2
+      color:
+        serializedVersion: 2
+        rgba: 0
     - name: chest1
+      guid: 
       position: {x: 128.44244, y: -0.00002165266, z: 0}
       rotation: {x: 0, y: 0, z: 0.16338544, w: 0.9865624}
       length: 87.82567
       parentId: 0
+      color:
+        serializedVersion: 2
+        rgba: 0
     - name: Root
+      guid: 
       position: {x: 57.516815, y: 135.08447, z: 0}
       rotation: {x: 0, y: 0, z: -0.9997948, w: 0.020257832}
       length: 118.8141
       parentId: -1
+      color:
+        serializedVersion: 2
+        rgba: 0
     - name: Staart1
+      guid: 
       position: {x: 27.295177, y: 79.17447, z: 0}
       rotation: {x: 0, y: 0, z: 0.20998643, w: 0.97770435}
       length: 78.91867
       parentId: 2
+      color:
+        serializedVersion: 2
+        rgba: 0
     spriteOutline: []
     vertices:
     - position: {x: 83, y: 1}
@@ -4963,18 +5026,25 @@ ScriptedImporter:
       width: 197
       height: 239
     spriteID: 57fd36b3832538e479eeeeae1680498f
-    internalID: 0
     spriteBone:
     - name: Staart1
+      guid: 
       position: {x: 189.45117, y: 148.86932, z: 0}
       rotation: {x: 0, y: 0, z: -0.97324985, w: 0.22974952}
       length: 78.918655
       parentId: -1
+      color:
+        serializedVersion: 2
+        rgba: 0
     - name: staart2
+      guid: 
       position: {x: 78.91862, y: 0.0000013316112, z: 0}
       rotation: {x: 0, y: 0, z: -0.29071644, w: 0.95680934}
       length: 101.88093
       parentId: 0
+      color:
+        serializedVersion: 2
+        rgba: 0
     spriteOutline: []
     vertices:
     - position: {x: 148.742, y: 1.9779968}
@@ -5409,13 +5479,16 @@ ScriptedImporter:
       width: 174
       height: 257
     spriteID: e23b37b6d279144469ed0ebe6182d831
-    internalID: 0
     spriteBone:
     - name: Leg2_voor
+      guid: 
       position: {x: 75.99811, y: 225.22882, z: 0}
       rotation: {x: 0, y: 0, z: -0.6435353, w: 0.76541644}
       length: 177.50307
       parentId: -1
+      color:
+        serializedVersion: 2
+        rgba: 0
     spriteOutline: []
     vertices:
     - position: {x: 81.017, y: 1.9689941}
@@ -5833,23 +5906,34 @@ ScriptedImporter:
       width: 145
       height: 326
     spriteID: f54e0788f3744ed45a6ff9fb621ca0f2
-    internalID: 0
     spriteBone:
     - name: Hoef2
+      guid: 
       position: {x: 123.78965, y: -0.000026100512, z: 0}
       rotation: {x: 0, y: 0, z: 0.04054067, w: 0.99917793}
       length: 77.84008
       parentId: 1
+      color:
+        serializedVersion: 2
+        rgba: 0
     - name: Leg2_achter
+      guid: 
       position: {x: 106.234436, y: 0.00003397731, z: 0}
       rotation: {x: 0, y: 0, z: 0.47837925, w: 0.8781534}
       length: 123.789665
       parentId: 2
+      color:
+        serializedVersion: 2
+        rgba: 0
     - name: Leg2_tussen_bone
+      guid: 
       position: {x: 99.47974, y: 289.36255, z: 0}
       rotation: {x: 0, y: 0, z: -0.89976573, w: 0.43637332}
       length: 106.23451
       parentId: -1
+      color:
+        serializedVersion: 2
+        rgba: 0
     spriteOutline: []
     vertices:
     - position: {x: 92.082, y: 0.7969971}
@@ -6359,307 +6443,197 @@ ScriptedImporter:
     tessellationDetail: 0
     parentGroupIndex: -1
     uvTransform: {x: -227, y: 347}
-  platformSettings: []
-  mosaicLayers: 1
-  documentPivot: {x: 0, y: 0}
-  documentAlignment: 7
-  importHiddenLayers: 0
-  importedTextureWidth: 1024
-  importedTextureHeight: 1024
-  documentSize: {x: 1080, y: 1080}
-  paperDollMode: 0
-  keepDupilcateSpriteName: 0
-  spriteCategoryList:
-    categories: []
-  textureActualWidth: 1024
-  textureActualHeight: 1024
-  spritePackingTag: 
-  resliceFromLayer: 0
-  characterMode: 1
-  mosaicPSDLayers: []
-  rigPSDLayers:
-  - name: Zera
-    spriteName: 
-    isGroup: 1
-    parentIndex: -1
-    spriteID: 00000000000000000000000000000000
-    layerID: 104
-    mosaicPosition: {x: 0, y: 0}
-  - name: Hoofd
-    spriteName: 
-    isGroup: 1
-    parentIndex: 0
-    spriteID: 00000000000000000000000000000000
-    layerID: 6
-    mosaicPosition: {x: 0, y: 0}
-  - name: Hoofd
-    spriteName: Hoofd
-    isGroup: 0
-    parentIndex: 1
-    spriteID: 717e210269c5ddb4e9fbf003e0232594
-    layerID: 17
-    mosaicPosition: {x: 4, y: 385}
-  - name: Oor 1
-    spriteName: 
-    isGroup: 1
-    parentIndex: 0
-    spriteID: 00000000000000000000000000000000
-    layerID: 4
-    mosaicPosition: {x: 0, y: 0}
-  - name: Oor1
-    spriteName: Oor1
-    isGroup: 0
-    parentIndex: 3
-    spriteID: 5d1a5e0396f30f943a010de5f0f4a55f
-    layerID: 23
-    mosaicPosition: {x: 615, y: 4}
-  - name: Oor 2
-    spriteName: 
-    isGroup: 1
-    parentIndex: 0
-    spriteID: 00000000000000000000000000000000
-    layerID: 21
-    mosaicPosition: {x: 0, y: 0}
-  - name: Oor2
-    spriteName: Oor2
-    isGroup: 0
-    parentIndex: 5
-    spriteID: 98714d2c2a8ca1a4bbd431eeb9f4543b
-    layerID: 28
-    mosaicPosition: {x: 615, y: 212}
-  - name: Nek
-    spriteName: 
-    isGroup: 1
-    parentIndex: 0
-    spriteID: 00000000000000000000000000000000
-    layerID: 30
-    mosaicPosition: {x: 0, y: 0}
-  - name: Nek
-    spriteName: Nek
-    isGroup: 0
-    parentIndex: 7
-    spriteID: 0b9c3ec55a3377745b8083d5f880d3e6
-    layerID: 32
-    mosaicPosition: {x: 826, y: 4}
-  - name: Jas
-    spriteName: 
-    isGroup: 1
-    parentIndex: 0
-    spriteID: 00000000000000000000000000000000
-    layerID: 35
-    mosaicPosition: {x: 0, y: 0}
-  - name: Jas
-    spriteName: Jas
-    isGroup: 0
-    parentIndex: 9
-    spriteID: 98a3e13c0edeed041af22f3ef55ec5fb
-    layerID: 37
-    mosaicPosition: {x: 4, y: 4}
-  - name: Haar
-    spriteName: 
-    isGroup: 1
-    parentIndex: 0
-    spriteID: 00000000000000000000000000000000
-    layerID: 99
-    mosaicPosition: {x: 0, y: 0}
-  - name: Haar
-    spriteName: Haar
-    isGroup: 0
-    parentIndex: 11
-    spriteID: 9fa54171e011e294682f429c05880e3f
-    layerID: 101
-    mosaicPosition: {x: 410, y: 782}
-  - name: Leg 1 Voor
-    spriteName: 
-    isGroup: 1
-    parentIndex: 0
-    spriteID: 00000000000000000000000000000000
-    layerID: 46
-    mosaicPosition: {x: 0, y: 0}
-  - name: Leg1_voor
-    spriteName: Leg1_voor
-    isGroup: 0
-    parentIndex: 13
-    spriteID: 899e3cfcde320e74b84121c0139970fc
-    layerID: 50
-    mosaicPosition: {x: 410, y: 516}
-  - name: Leg 1 achter
-    spriteName: 
-    isGroup: 1
-    parentIndex: 0
-    spriteID: 00000000000000000000000000000000
-    layerID: 48
-    mosaicPosition: {x: 0, y: 0}
-  - name: Leg1_achter
-    spriteName: Leg1_achter
-    isGroup: 0
-    parentIndex: 15
-    spriteID: f567d7d03cafc1d4f840f684cbeb542a
-    layerID: 52
-    mosaicPosition: {x: 4, y: 694}
-  - name: Chest1
-    spriteName: 
-    isGroup: 1
-    parentIndex: 0
-    spriteID: 00000000000000000000000000000000
-    layerID: 41
-    mosaicPosition: {x: 0, y: 0}
-  - name: Chest
-    spriteName: Chest
-    isGroup: 0
-    parentIndex: 17
-    spriteID: 68992925c83f74b4987cd23ba2a0bf57
-    layerID: 43
-    mosaicPosition: {x: 231, y: 4}
-  - name: Staart
-    spriteName: 
-    isGroup: 1
-    parentIndex: 0
-    spriteID: 00000000000000000000000000000000
-    layerID: 72
-    mosaicPosition: {x: 0, y: 0}
-  - name: Staart
-    spriteName: Staart
-    isGroup: 0
-    parentIndex: 19
-    spriteID: 57fd36b3832538e479eeeeae1680498f
-    layerID: 74
-    mosaicPosition: {x: 410, y: 4}
-  - name: Leg 2 Voor
-    spriteName: 
-    isGroup: 1
-    parentIndex: 0
-    spriteID: 00000000000000000000000000000000
-    layerID: 66
-    mosaicPosition: {x: 0, y: 0}
-  - name: Leg2_voor
-    spriteName: Leg2_voor
-    isGroup: 0
-    parentIndex: 21
-    spriteID: e23b37b6d279144469ed0ebe6182d831
-    layerID: 78
-    mosaicPosition: {x: 410, y: 251}
-  - name: Leg 2 achter
-    spriteName: 
-    isGroup: 1
-    parentIndex: 0
-    spriteID: 00000000000000000000000000000000
-    layerID: 62
-    mosaicPosition: {x: 0, y: 0}
-  - name: Leg2_achter
-    spriteName: Leg2_achter
-    isGroup: 0
-    parentIndex: 23
-    spriteID: f54e0788f3744ed45a6ff9fb621ca0f2
-    layerID: 58
-    mosaicPosition: {x: 231, y: 369}
   characterData:
     bones:
     - name: Root
+      guid: 
       position: {x: 496.5168, y: 507.08447, z: 0}
       rotation: {x: 0, y: 0, z: -0.9997948, w: 0.020257832}
       length: 118.8141
       parentId: -1
+      color:
+        serializedVersion: 2
+        rgba: 0
     - name: Leg1_voor
+      guid: 
       position: {x: -2.1011279, y: 27.380342, z: 0}
       rotation: {x: 0, y: -0, z: 0.7259478, w: 0.6877498}
       length: 186.93105
       parentId: 0
+      color:
+        serializedVersion: 2
+        rgba: 0
     - name: Leg1_tussen_bone
+      guid: 
       position: {x: 186.93103, y: 0.000035251924, z: 0}
       rotation: {x: 0, y: 0, z: -0.42017934, w: 0.90744114}
       length: 89.62448
       parentId: 1
+      color:
+        serializedVersion: 2
+        rgba: 0
     - name: Leg1_achter
+      guid: 
       position: {x: 89.62446, y: 0.0000060756765, z: 0}
       rotation: {x: 0, y: 0, z: 0.5110929, w: 0.8595255}
       length: 141.06705
       parentId: 2
+      color:
+        serializedVersion: 2
+        rgba: 0
     - name: Hoef1
+      guid: 
       position: {x: 141.06703, y: 0.000021837108, z: 0}
       rotation: {x: 0, y: 0, z: 0.06318649, w: 0.9980018}
       length: 77.53822
       parentId: 3
+      color:
+        serializedVersion: 2
+        rgba: 0
     - name: Leg2_voor
+      guid: 
       position: {x: -29.61145, y: 22.073242, z: 0}
       rotation: {x: 0, y: -0, z: 0.7522227, w: 0.65890896}
       length: 177.50304
       parentId: 0
+      color:
+        serializedVersion: 2
+        rgba: 0
     - name: Leg2_tussen_bone
+      guid: 
       position: {x: 177.50304, y: 0.00003040826, z: 0}
       rotation: {x: 0, y: 0, z: -0.40787378, w: 0.9130383}
       length: 106.234535
       parentId: 5
+      color:
+        serializedVersion: 2
+        rgba: 0
     - name: Leg2_achter
+      guid: 
       position: {x: 106.23452, y: 0.000013699698, z: 0}
       rotation: {x: 0, y: 0, z: 0.47837922, w: 0.8781534}
       length: 123.78967
       parentId: 6
+      color:
+        serializedVersion: 2
+        rgba: 0
     - name: Hoef2
+      guid: 
       position: {x: 123.78966, y: -0.0000042300335, z: 0}
       rotation: {x: 0, y: 0, z: 0.040540695, w: 0.99917793}
       length: 77.840096
       parentId: 7
+      color:
+        serializedVersion: 2
+        rgba: 0
     - name: Staart1
+      guid: 
       position: {x: 27.29515, y: 79.17447, z: 0}
       rotation: {x: 0, y: 0, z: 0.20998643, w: 0.97770435}
       length: 78.91866
       parentId: 0
+      color:
+        serializedVersion: 2
+        rgba: 0
     - name: staart2
+      guid: 
       position: {x: 78.918655, y: -0.000017124199, z: 0}
       rotation: {x: 0, y: 0, z: -0.2907164, w: 0.9568093}
       length: 101.88097
       parentId: 9
+      color:
+        serializedVersion: 2
+        rgba: 0
     - name: chest2
+      guid: 
       position: {x: -24.304348, y: -5.4370475, z: 0}
       rotation: {x: 0, y: -0, z: -0.7753096, w: 0.63158137}
       length: 128.44241
       parentId: 0
+      color:
+        serializedVersion: 2
+        rgba: 0
     - name: chest1
+      guid: 
       position: {x: 128.44243, y: 0.000011249103, z: 0}
       rotation: {x: 0, y: 0, z: 0.16338545, w: 0.9865623}
       length: 87.82567
       parentId: 11
+      color:
+        serializedVersion: 2
+        rgba: 0
     - name: Nek
+      guid: 
       position: {x: 87.82569, y: -0.000023782311, z: 0}
       rotation: {x: 0, y: 0, z: -0.2225902, w: 0.9749121}
       length: 80.21411
       parentId: 12
+      color:
+        serializedVersion: 2
+        rgba: 0
     - name: Hoofd
+      guid: 
       position: {x: 80.21412, y: 0.000018950499, z: 0}
       rotation: {x: 0, y: 0, z: -0.10488057, w: 0.99448484}
       length: 94.74746
       parentId: 13
+      color:
+        serializedVersion: 2
+        rgba: 0
     - name: Oor1_1
+      guid: 
       position: {x: 48.025314, y: 49.546837, z: 0}
       rotation: {x: 0, y: 0, z: 0.62117714, w: 0.7836702}
       length: 111.378845
       parentId: 14
+      color:
+        serializedVersion: 2
+        rgba: 0
     - name: Oor1_2
+      guid: 
       position: {x: 111.3788, y: 0.000010844935, z: 0}
       rotation: {x: 0, y: 0, z: -0.082916826, w: 0.99655646}
       length: 130.03555
       parentId: 15
+      color:
+        serializedVersion: 2
+        rgba: 0
     - name: Oor2_1
+      guid: 
       position: {x: 78.557465, y: 36.83413, z: 0}
       rotation: {x: 0, y: 0, z: 0.6009747, w: 0.7992681}
       length: 112.31099
       parentId: 14
+      color:
+        serializedVersion: 2
+        rgba: 0
     - name: Oor2_2
+      guid: 
       position: {x: 112.3111, y: -0.00009289416, z: 0}
       rotation: {x: 0, y: 0, z: 0.008458961, w: 0.99996424}
       length: 125.96387
       parentId: 17
+      color:
+        serializedVersion: 2
+        rgba: 0
     - name: Haar1
+      guid: 
       position: {x: 4.939246, y: 34.537846, z: 0}
       rotation: {x: 0, y: -0, z: 0.7733424, w: 0.6339887}
       length: 60.38988
       parentId: 14
+      color:
+        serializedVersion: 2
+        rgba: 0
     - name: Haar2
+      guid: 
       position: {x: 60.38989, y: -0.000011727774, z: 0}
       rotation: {x: 0, y: 0, z: 0.025780244, w: 0.99966764}
       length: 52.916916
       parentId: 19
+      color:
+        serializedVersion: 2
+        rgba: 0
     parts:
     - spritePosition:
         x: 463
@@ -6771,8 +6745,296 @@ ScriptedImporter:
       order: 0
     dimension: {x: 0, y: 0}
     characterGroups: []
+    boneReadOnly: 0
+  sharedRigSpriteImportData: []
+  sharedRigCharacterData:
+    bones: []
+    parts: []
+    dimension: {x: 0, y: 0}
+    characterGroups: []
+    boneReadOnly: 0
+  platformSettings: []
+  mosaicLayers: 1
+  characterMode: 1
+  documentPivot: {x: 0, y: 0}
+  documentAlignment: 7
+  importHiddenLayers: 0
+  layerMappingOption: 2
+  generatePhysicsShape: 0
+  paperDollMode: 0
+  keepDupilcateSpriteName: 0
+  skeletonAssetReferenceID: 
+  spriteCategoryList:
+    categories: []
+  spritePackingTag: 
+  resliceFromLayer: 0
+  mosaicPSDLayers: []
+  rigPSDLayers:
+  - name: Zera
+    spriteName: 
+    isGroup: 1
+    parentIndex: -1
+    spriteID: f041410a3de908b49b85ec2921be12d9
+    layerID: 104
+    mosaicPosition: {x: 0, y: 0}
+    flatten: 0
+    isImported: 0
+    isVisible: 1
+  - name: Hoofd
+    spriteName: 
+    isGroup: 1
+    parentIndex: 0
+    spriteID: e6a71be929963524d815ba1373fa4f2b
+    layerID: 6
+    mosaicPosition: {x: 0, y: 0}
+    flatten: 0
+    isImported: 0
+    isVisible: 1
+  - name: Hoofd
+    spriteName: Hoofd
+    isGroup: 0
+    parentIndex: 1
+    spriteID: 717e210269c5ddb4e9fbf003e0232594
+    layerID: 17
+    mosaicPosition: {x: 4, y: 385}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Oor 1
+    spriteName: 
+    isGroup: 1
+    parentIndex: 0
+    spriteID: 20329942249c17d4296902afdc9c080c
+    layerID: 4
+    mosaicPosition: {x: 0, y: 0}
+    flatten: 0
+    isImported: 0
+    isVisible: 1
+  - name: Oor1
+    spriteName: Oor1
+    isGroup: 0
+    parentIndex: 3
+    spriteID: 5d1a5e0396f30f943a010de5f0f4a55f
+    layerID: 23
+    mosaicPosition: {x: 615, y: 4}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Oor 2
+    spriteName: 
+    isGroup: 1
+    parentIndex: 0
+    spriteID: de5ed99e492c4104299e1f570ee957c3
+    layerID: 21
+    mosaicPosition: {x: 0, y: 0}
+    flatten: 0
+    isImported: 0
+    isVisible: 1
+  - name: Oor2
+    spriteName: Oor2
+    isGroup: 0
+    parentIndex: 5
+    spriteID: 98714d2c2a8ca1a4bbd431eeb9f4543b
+    layerID: 28
+    mosaicPosition: {x: 615, y: 212}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Nek
+    spriteName: 
+    isGroup: 1
+    parentIndex: 0
+    spriteID: c76ea54f53d5f3f439b5826fcfc5cdaa
+    layerID: 30
+    mosaicPosition: {x: 0, y: 0}
+    flatten: 0
+    isImported: 0
+    isVisible: 1
+  - name: Nek
+    spriteName: Nek
+    isGroup: 0
+    parentIndex: 7
+    spriteID: 0b9c3ec55a3377745b8083d5f880d3e6
+    layerID: 32
+    mosaicPosition: {x: 826, y: 4}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Jas
+    spriteName: 
+    isGroup: 1
+    parentIndex: 0
+    spriteID: 028c66e557433714bbf67859e825671c
+    layerID: 35
+    mosaicPosition: {x: 0, y: 0}
+    flatten: 0
+    isImported: 0
+    isVisible: 1
+  - name: Jas
+    spriteName: Jas
+    isGroup: 0
+    parentIndex: 9
+    spriteID: 98a3e13c0edeed041af22f3ef55ec5fb
+    layerID: 37
+    mosaicPosition: {x: 4, y: 4}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Haar
+    spriteName: 
+    isGroup: 1
+    parentIndex: 0
+    spriteID: 780f76a144615b34885ee8260e69a61d
+    layerID: 99
+    mosaicPosition: {x: 0, y: 0}
+    flatten: 0
+    isImported: 0
+    isVisible: 1
+  - name: Haar
+    spriteName: Haar
+    isGroup: 0
+    parentIndex: 11
+    spriteID: 9fa54171e011e294682f429c05880e3f
+    layerID: 101
+    mosaicPosition: {x: 410, y: 782}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Leg 1 Voor
+    spriteName: 
+    isGroup: 1
+    parentIndex: 0
+    spriteID: 4070cbbf7ac726444afff2225408c04c
+    layerID: 46
+    mosaicPosition: {x: 0, y: 0}
+    flatten: 0
+    isImported: 0
+    isVisible: 1
+  - name: Leg1_voor
+    spriteName: Leg1_voor
+    isGroup: 0
+    parentIndex: 13
+    spriteID: 899e3cfcde320e74b84121c0139970fc
+    layerID: 50
+    mosaicPosition: {x: 410, y: 516}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Leg 1 achter
+    spriteName: 
+    isGroup: 1
+    parentIndex: 0
+    spriteID: 0d2871c0de899994791bdd709881cb6a
+    layerID: 48
+    mosaicPosition: {x: 0, y: 0}
+    flatten: 0
+    isImported: 0
+    isVisible: 1
+  - name: Leg1_achter
+    spriteName: Leg1_achter
+    isGroup: 0
+    parentIndex: 15
+    spriteID: f567d7d03cafc1d4f840f684cbeb542a
+    layerID: 52
+    mosaicPosition: {x: 4, y: 694}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Chest1
+    spriteName: 
+    isGroup: 1
+    parentIndex: 0
+    spriteID: f2b309be91ee78046941f0fecf2545e5
+    layerID: 41
+    mosaicPosition: {x: 0, y: 0}
+    flatten: 0
+    isImported: 0
+    isVisible: 1
+  - name: Chest
+    spriteName: Chest
+    isGroup: 0
+    parentIndex: 17
+    spriteID: 68992925c83f74b4987cd23ba2a0bf57
+    layerID: 43
+    mosaicPosition: {x: 231, y: 4}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Staart
+    spriteName: 
+    isGroup: 1
+    parentIndex: 0
+    spriteID: a4a1f9dce078ce6499cd6dc45f4894af
+    layerID: 72
+    mosaicPosition: {x: 0, y: 0}
+    flatten: 0
+    isImported: 0
+    isVisible: 1
+  - name: Staart
+    spriteName: Staart
+    isGroup: 0
+    parentIndex: 19
+    spriteID: 57fd36b3832538e479eeeeae1680498f
+    layerID: 74
+    mosaicPosition: {x: 410, y: 4}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Leg 2 Voor
+    spriteName: 
+    isGroup: 1
+    parentIndex: 0
+    spriteID: c8aacf9216350e9439c87dd180be9d28
+    layerID: 66
+    mosaicPosition: {x: 0, y: 0}
+    flatten: 0
+    isImported: 0
+    isVisible: 1
+  - name: Leg2_voor
+    spriteName: Leg2_voor
+    isGroup: 0
+    parentIndex: 21
+    spriteID: e23b37b6d279144469ed0ebe6182d831
+    layerID: 78
+    mosaicPosition: {x: 410, y: 251}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Leg 2 achter
+    spriteName: 
+    isGroup: 1
+    parentIndex: 0
+    spriteID: de3db32b7dabe7f41926a567b9d5d30d
+    layerID: 62
+    mosaicPosition: {x: 0, y: 0}
+    flatten: 0
+    isImported: 0
+    isVisible: 1
+  - name: Leg2_achter
+    spriteName: Leg2_achter
+    isGroup: 0
+    parentIndex: 23
+    spriteID: f54e0788f3744ed45a6ff9fb621ca0f2
+    layerID: 58
+    mosaicPosition: {x: 231, y: 369}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Achtergrond
+    spriteName: 
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 00000000000000000000000000000000
+    layerID: 1
+    mosaicPosition: {x: 0, y: 0}
+    flatten: 0
+    isImported: 0
+    isVisible: 0
+  sharedRigPSDLayers: []
+  pSDLayerImportSetting: []
   generateGOHierarchy: 0
   textureAssetName: Zera  sprites unity Texture
   prefabAssetName: Zera  sprites unity Prefab
   spriteLibAssetName: Zera  sprites unity Sprite Lib
+  skeletonAssetName: 
   secondarySpriteTextures: []

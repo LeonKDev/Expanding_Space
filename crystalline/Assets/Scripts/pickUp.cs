@@ -12,7 +12,7 @@ public class pickUp : MonoBehaviour
     [SerializeField] private Sprite sprite3;
     [SerializeField] private Sprite sprite4;
 
-    private void OnTriggerEnter(Collider other)
+    private void OnTriggerEnter2D(Collider2D other)
     {
         if (other.gameObject.tag == "Item1" && pickedUp == false)
         {

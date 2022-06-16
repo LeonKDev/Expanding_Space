@@ -6,7 +6,7 @@ using UnityEngine.UI;
 public class CrystalRecharge : MonoBehaviour
 {
     public crystal Crystal;
-    private void OnTriggerEnter(Collider other)
+    private void OnTriggerEnter2D(Collider2D other)
     {
         if (other.gameObject.tag == "Recharge")
         {
