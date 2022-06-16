@@ -13,6 +13,7 @@ TagManager:
   - Item4
   - Item3
   - interactable
+  - floor
   layers:
   - Default
   - TransparentFX

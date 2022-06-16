@@ -6,7 +6,7 @@ using UnityEngine.Animations;
 public class movement : MonoBehaviour
 {
     public GameObject Player;
-    private Rigidbody rb;
+    private Rigidbody2D rb;
     public float jumpPower = 8;
     public bool canJump = true;
 
@@ -20,7 +20,7 @@ public class movement : MonoBehaviour
 
     void Start()
     {
-        rb = gameObject.GetComponent<Rigidbody>();
+        rb = gameObject.GetComponent<Rigidbody2D>();
     }
 
     void Update()
@@ -67,13 +67,21 @@ public class movement : MonoBehaviour
 
         }
     }
-    private void OnCollisionEnter(Collision collision)
+    private void OnTriggerEnter2D(Collider2D other)
     {
-        canJump = true;
+        if (other.gameObject.tag == "floor")
+        {
+            canJump = true;
+        }
+        
     }
-    private void OnCollisionExit(Collision collision)
+    private void OnTriggerExit2D(Collider2D other)
     {
-        canJump = false;
+        if (other.gameObject.tag == "floor")
+        {
+            canJump = false;
+        }
+        
     }
 
 

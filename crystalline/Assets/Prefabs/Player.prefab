@@ -9,11 +9,11 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 711874441909291995}
-  - component: {fileID: 711874441909291997}
-  - component: {fileID: 711874441909291994}
   - component: {fileID: 3728714931667665658}
   - component: {fileID: 8826833596882817152}
   - component: {fileID: 711874441909291992}
+  - component: {fileID: 2379166246029493212}
+  - component: {fileID: 5851353242410224238}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -38,36 +38,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!54 &711874441909291997
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 711874441909291993}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 1
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 120
-  m_CollisionDetection: 1
---- !u!136 &711874441909291994
-CapsuleCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 711874441909291993}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  m_Radius: 0.34
-  m_Height: 2.96
-  m_Direction: 1
-  m_Center: {x: 0.01, y: 0.34, z: 0}
 --- !u!114 &3728714931667665658
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -114,9 +84,46 @@ MonoBehaviour:
   Player: {fileID: 711874443881180811}
   jumpPower: 8
   canJump: 1
-  movementSpeed: 3
+  movementSpeed: 7
   RotateValue1: -1
   RotateValue2: 1
+--- !u!70 &2379166246029493212
+CapsuleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 711874441909291993}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_Size: {x: 0.5, y: 1}
+  m_Direction: 0
+--- !u!50 &5851353242410224238
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 711874441909291993}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &711874441929606250
 GameObject:
   m_ObjectHideFlags: 0
@@ -2255,6 +2262,7 @@ GameObject:
   m_Component:
   - component: {fileID: 711874443881180810}
   - component: {fileID: 711874443881180813}
+  - component: {fileID: 879672144}
   m_Layer: 0
   m_Name: Zera  sprites unity
   m_TagString: Untagged
@@ -2299,7 +2307,7 @@ Animator:
   m_GameObject: {fileID: 711874443881180811}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 267f2e4c607ae1b40855eb61f737c8d3, type: 2}
+  m_Controller: {fileID: 9100000, guid: 384585b7c214a0c4ead70ed00ab289c9, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -2308,6 +2316,20 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &879672144
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 711874443881180811}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a6b2c0320b7c98a4b8038d2d4905ecc9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Player: {fileID: 711874441909291993}
+  animator: {fileID: 711874443881180813}
 --- !u!1 &711874443918532068
 GameObject:
   m_ObjectHideFlags: 0
