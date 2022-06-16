@@ -12,6 +12,7 @@ TagManager:
   - Item2
   - Item4
   - Item3
+  - interactable
   layers:
   - Default
   - TransparentFX
