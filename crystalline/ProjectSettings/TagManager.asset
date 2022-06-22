@@ -14,6 +14,7 @@ TagManager:
   - Item3
   - interactable
   - floor
+
   layers:
   - Default
   - TransparentFX
@@ -21,8 +22,8 @@ TagManager:
   - 
   - Water
   - UI
-  - glow
-  - postprocessing
+  - 
+  - 
   - 
   - 
   - 

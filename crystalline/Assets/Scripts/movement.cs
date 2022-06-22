@@ -9,7 +9,6 @@ public class movement : MonoBehaviour
     private Rigidbody2D rb;
     public float jumpPower = 8;
     public bool canJump = true;
-
     public float movementSpeed;
 
     public float RotateValue1 = -1;
@@ -59,32 +58,15 @@ public class movement : MonoBehaviour
         }
         if (Input.GetKey(KeyCode.Space) && canJump == true)
         {
-
-            rb.velocity = new Vector3(0, jumpPower, 0);
-        }
-        if (Input.GetKeyDown(KeyCode.S) && canJump == true)
-        {
-
+                rb.velocity = new Vector3(0, jumpPower, 0);
         }
     }
-    private void OnTriggerEnter2D(Collider2D other)
+    private void ontriggerenter2D(Collision2D collision)
     {
-        if (other.gameObject.tag == "floor")
-        {
-            canJump = true;
-        }
-        
+        canJump = true;
     }
-    private void OnTriggerExit2D(Collider2D other)
+    private void OntriggerExit2D(Collision2D collision)
     {
-        if (other.gameObject.tag == "floor")
-        {
-            canJump = false;
-        }
-        
+        canJump = false;
     }
-
-
-   
-
 }
