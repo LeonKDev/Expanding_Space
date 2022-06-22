@@ -6,8 +6,7 @@ using UnityEngine.SceneManagement;
 public class Deur : MonoBehaviour
 {
     public bool IsInRange;
-    public KeyCode interactKey;
-    public UnityEvent interactAction;
+    
     
    void Start()
     {
@@ -26,10 +25,12 @@ public class Deur : MonoBehaviour
     void Update()
     {
         if (IsInRange)
+        
+
         {
-            if (Input.GetKeyDown(interactKey))
+            if (Input.GetKeyDown(KeyCode.E))
             {
-                interactAction.Invoke();
+                SceneManager.LoadScene(1);
             }
         }
        

@@ -1,8 +1,13 @@
 {
   "dependencies": {
     "com.unity.2d.animation": {
+<<<<<<< HEAD
+      "version": "5.2.0",
+      "depth": 1,
+=======
       "version": "5.2.2",
       "depth": 0,
+>>>>>>> 282c10e046392a32b6526e3e0bc2bc4f49b518fd
       "source": "registry",
       "dependencies": {
         "com.unity.2d.common": "4.2.0",
@@ -30,6 +35,8 @@
       "dependencies": {},
       "url": "https://packages.unity.com"
     },
+<<<<<<< HEAD
+=======
     "com.unity.2d.pixel-perfect": {
       "version": "4.0.1",
       "depth": 0,
@@ -37,6 +44,7 @@
       "dependencies": {},
       "url": "https://packages.unity.com"
     },
+>>>>>>> 282c10e046392a32b6526e3e0bc2bc4f49b518fd
     "com.unity.2d.psdimporter": {
       "version": "4.3.0",
       "depth": 0,
@@ -66,12 +74,15 @@
       },
       "url": "https://packages.unity.com"
     },
+<<<<<<< HEAD
+=======
     "com.unity.2d.tilemap": {
       "version": "1.0.0",
       "depth": 0,
       "source": "builtin",
       "dependencies": {}
     },
+>>>>>>> 282c10e046392a32b6526e3e0bc2bc4f49b518fd
     "com.unity.collab-proxy": {
       "version": "1.15.18",
       "depth": 0,
@@ -146,15 +157,6 @@
         "com.unity.ext.nunit": "1.0.6",
         "com.unity.modules.imgui": "1.0.0",
         "com.unity.modules.jsonserialize": "1.0.0"
-      },
-      "url": "https://packages.unity.com"
-    },
-    "com.unity.textmeshpro": {
-      "version": "3.0.6",
-      "depth": 0,
-      "source": "registry",
-      "dependencies": {
-        "com.unity.ugui": "1.0.0"
       },
       "url": "https://packages.unity.com"
     },
