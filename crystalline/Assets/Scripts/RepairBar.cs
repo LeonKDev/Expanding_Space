@@ -11,6 +11,7 @@ public class RepairBar : MonoBehaviour
     public float progress;
     public float maxProgress;
     public GameObject item;
+    
 
 
     private void Start()
@@ -24,11 +25,14 @@ public class RepairBar : MonoBehaviour
     {
         if (other.gameObject.tag == "Player" && pickUp.pickedUp == true)
         {
-
             pickUp.pickedUp = false;
             progress += 1;
             slider.value = progress;
             Debug.Log("oui");
+            if (pickUp.pickedUp == false)
+            {
+                item.SetActive(false);
+            }
         }
 
 
