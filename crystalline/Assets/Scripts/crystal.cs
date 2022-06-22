@@ -40,6 +40,7 @@ public class crystal : MonoBehaviour
         if (Input.GetMouseButtonDown(1))
         {
             SwitchCrystal();
+            
 
         }
         if (energy < 0.00)
@@ -63,6 +64,7 @@ public class crystal : MonoBehaviour
         {
             nonActiveCrystal.SetActive(false);
             activeCrystal.SetActive(true);
+            
         }
         else
         {
