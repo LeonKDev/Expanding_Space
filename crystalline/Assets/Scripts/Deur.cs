@@ -39,7 +39,7 @@ public class Deur : MonoBehaviour
 
     }
 
-    private void OnTriggerEnter2D(Collider other)
+    private void OnTriggerEnter2D(Collider2D other)
     {
         if (other.gameObject.CompareTag("Player"))
         {
@@ -47,7 +47,7 @@ public class Deur : MonoBehaviour
             Debug.Log("Player is now in Range");
         }
     }
-    private void OnTriggerExit2D(Collider other)
+    private void OnTriggerExit2D(Collider2D other)
     {
         IsInRange = false;
         Debug.Log("Player is now in Range");
