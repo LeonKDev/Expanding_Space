@@ -63,10 +63,17 @@ public class movement : MonoBehaviour
     }
     private void OnTriggerEnter2D(Collider2D other)
     {
-        canJump = true;
+        if(other.gameObject.tag == "floor")
+        {
+            canJump = true;
+        }
     }
     private void OnTriggerExit2D(Collider2D other)
     {
-        canJump = false;
+        if (other.gameObject.tag == "floor")
+        {
+            canJump = false;
+        }
+            
     }
 }
