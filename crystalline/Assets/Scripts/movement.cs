@@ -56,12 +56,12 @@ public class movement : MonoBehaviour
             
             transform.position += new Vector3(movementSpeed, 0, 0) * Time.deltaTime;
         }
-        if (Input.GetKey(KeyCode.Space) && canJump == true)
+        if (Input.GetKeyDown(KeyCode.Space) && canJump == true)
         {
                 rb.velocity = new Vector3(0, jumpPower, 0);
         }
     }
-    private void Oncollisionenter2D(Collision2D collision)
+    private void ontriggerenter2D(Collision2D collision)
     {
         canJump = true;
     }
@@ -69,5 +69,8 @@ public class movement : MonoBehaviour
     {
         canJump = false;
     }
+
+
+   
 
 }

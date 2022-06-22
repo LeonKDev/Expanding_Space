@@ -29,7 +29,7 @@ public class RepairBar : MonoBehaviour
             item.SetActive(false);
         }
     }
-    private void OnTriggerEnter(Collider other)
+    private void OnTriggerEnter2D(Collider2D other)
     {
         if (other.gameObject.tag == "Player" && pickUp.pickedUp == true)
         {

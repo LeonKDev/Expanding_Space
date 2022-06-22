@@ -3,16 +3,7 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags:
-  - CrystalMeateore
-  - Item
-  - recharge
-  - Recharge
-  - Item1
-  - Item2
-  - Item4
-  - Item3
-  - Enemy
+  tags: []
   layers:
   - Default
   - TransparentFX
@@ -20,10 +11,10 @@ TagManager:
   - 
   - Water
   - UI
-  - glow
-  - postprocessing
-  - ground
-  - Enemy
+  - 
+  - 
+  - 
+  - 
   - 
   - 
   - 
@@ -49,7 +40,4 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
-    locked: 0
-  - name: New Layer 1
-    uniqueID: 3353493203
     locked: 0
