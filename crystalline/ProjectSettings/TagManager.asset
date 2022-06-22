@@ -3,7 +3,18 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - CrystalMeateore
+  - Item
+  - recharge
+  - Recharge
+  - Item1
+  - Item2
+  - Item4
+  - Item3
+  - interactable
+  - floor
+
   layers:
   - Default
   - TransparentFX

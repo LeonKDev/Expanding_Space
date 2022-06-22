@@ -69,8 +69,4 @@ public class movement : MonoBehaviour
     {
         canJump = false;
     }
-
-
-   
-
 }
