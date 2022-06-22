@@ -25,6 +25,5 @@ public class EnemyAI : MonoBehaviour
             Destroy(this.gameObject);
         }
     }
->>>>>>> 3fec6e7dd0512e0b20af208ef2ffefa2dc1e9136
 }
 
