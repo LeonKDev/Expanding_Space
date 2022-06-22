@@ -19,16 +19,7 @@ public class RepairBar : MonoBehaviour
 
     }
     // Update is called once per frame
-    void Update()
-    {
-        if (Input.GetKeyDown(KeyCode.X))
-        {
-            progress += 1;
-            slider.value = progress;
-            Debug.Log("progress");
-            item.SetActive(false);
-        }
-    }
+    
     private void OnTriggerEnter2D(Collider2D other)
     {
         if (other.gameObject.tag == "Player" && pickUp.pickedUp == true)
