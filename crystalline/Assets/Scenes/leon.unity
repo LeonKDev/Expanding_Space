@@ -766,9 +766,8 @@ Transform:
   m_Children:
   - {fileID: 1726965800}
   - {fileID: 1557068869}
-  - {fileID: 1411752048}
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1193302601
 GameObject:
@@ -1147,7 +1146,6 @@ GameObject:
   - component: {fileID: 1411752048}
   - component: {fileID: 1411752047}
   - component: {fileID: 1411752046}
-  - component: {fileID: 1411752049}
   m_Layer: 0
   m_Name: SpaceShipPlaceholder
   m_TagString: Untagged
@@ -1212,30 +1210,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1411752044}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -18.29, y: -1.6563251, z: -1.01}
-  m_LocalScale: {x: 9.016009, y: 2.833056, z: 2.3964}
+  m_LocalPosition: {x: -22.09, y: 2.0817652, z: 0.71000004}
+  m_LocalScale: {x: 9.016009, y: 4.136262, z: 2.3964}
   m_Children:
   - {fileID: 1807177188}
-  m_Father: {fileID: 1110692568}
-  m_RootOrder: 2
+  m_Father: {fileID: 0}
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1411752049
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1411752044}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: eaf56e9b18e5d7b4d8a941cbd28b84c0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  slider: {fileID: 1661158828}
-  pickUp: {fileID: 4205825976714528771}
-  progress: 0
-  maxProgress: 4
-  item: {fileID: 876867938}
 --- !u!1 &1480016286
 GameObject:
   m_ObjectHideFlags: 0
@@ -1823,15 +1804,15 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1807177187}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0.42146555}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 0, y: 0, z: -0.2962778}
+  m_LocalScale: {x: 0.13309659, y: 0.29011703, z: 0.41729262}
   m_Children: []
   m_Father: {fileID: 1411752048}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0.5791, y: -0.478}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1807177189
@@ -1878,7 +1859,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: -3.1088483, y: 1.7493258}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -1889,7 +1870,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 7.4189315, y: 4.4986515}
   m_EdgeRadius: 0
 --- !u!1 &1955645136
 GameObject:

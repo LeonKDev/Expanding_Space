@@ -6382,14 +6382,14 @@ ScriptedImporter:
     spriteName: 
     isGroup: 1
     parentIndex: -1
-    spriteID: 00000000000000000000000000000000
+    spriteID: f041410a3de908b49b85ec2921be12d9
     layerID: 104
     mosaicPosition: {x: 0, y: 0}
   - name: Hoofd
     spriteName: 
     isGroup: 1
     parentIndex: 0
-    spriteID: 00000000000000000000000000000000
+    spriteID: e6a71be929963524d815ba1373fa4f2b
     layerID: 6
     mosaicPosition: {x: 0, y: 0}
   - name: Hoofd
@@ -6403,7 +6403,7 @@ ScriptedImporter:
     spriteName: 
     isGroup: 1
     parentIndex: 0
-    spriteID: 00000000000000000000000000000000
+    spriteID: 20329942249c17d4296902afdc9c080c
     layerID: 4
     mosaicPosition: {x: 0, y: 0}
   - name: Oor1
@@ -6417,7 +6417,7 @@ ScriptedImporter:
     spriteName: 
     isGroup: 1
     parentIndex: 0
-    spriteID: 00000000000000000000000000000000
+    spriteID: de5ed99e492c4104299e1f570ee957c3
     layerID: 21
     mosaicPosition: {x: 0, y: 0}
   - name: Oor2
@@ -6431,7 +6431,7 @@ ScriptedImporter:
     spriteName: 
     isGroup: 1
     parentIndex: 0
-    spriteID: 00000000000000000000000000000000
+    spriteID: c76ea54f53d5f3f439b5826fcfc5cdaa
     layerID: 30
     mosaicPosition: {x: 0, y: 0}
   - name: Nek
@@ -6445,7 +6445,7 @@ ScriptedImporter:
     spriteName: 
     isGroup: 1
     parentIndex: 0
-    spriteID: 00000000000000000000000000000000
+    spriteID: 028c66e557433714bbf67859e825671c
     layerID: 35
     mosaicPosition: {x: 0, y: 0}
   - name: Jas
@@ -6459,7 +6459,7 @@ ScriptedImporter:
     spriteName: 
     isGroup: 1
     parentIndex: 0
-    spriteID: 00000000000000000000000000000000
+    spriteID: 780f76a144615b34885ee8260e69a61d
     layerID: 99
     mosaicPosition: {x: 0, y: 0}
   - name: Haar
@@ -6473,7 +6473,7 @@ ScriptedImporter:
     spriteName: 
     isGroup: 1
     parentIndex: 0
-    spriteID: 00000000000000000000000000000000
+    spriteID: 4070cbbf7ac726444afff2225408c04c
     layerID: 46
     mosaicPosition: {x: 0, y: 0}
   - name: Leg1_voor
@@ -6487,7 +6487,7 @@ ScriptedImporter:
     spriteName: 
     isGroup: 1
     parentIndex: 0
-    spriteID: 00000000000000000000000000000000
+    spriteID: 0d2871c0de899994791bdd709881cb6a
     layerID: 48
     mosaicPosition: {x: 0, y: 0}
   - name: Leg1_achter
@@ -6501,7 +6501,7 @@ ScriptedImporter:
     spriteName: 
     isGroup: 1
     parentIndex: 0
-    spriteID: 00000000000000000000000000000000
+    spriteID: f2b309be91ee78046941f0fecf2545e5
     layerID: 41
     mosaicPosition: {x: 0, y: 0}
   - name: Chest
@@ -6515,7 +6515,7 @@ ScriptedImporter:
     spriteName: 
     isGroup: 1
     parentIndex: 0
-    spriteID: 00000000000000000000000000000000
+    spriteID: a4a1f9dce078ce6499cd6dc45f4894af
     layerID: 72
     mosaicPosition: {x: 0, y: 0}
   - name: Staart
@@ -6529,7 +6529,7 @@ ScriptedImporter:
     spriteName: 
     isGroup: 1
     parentIndex: 0
-    spriteID: 00000000000000000000000000000000
+    spriteID: c8aacf9216350e9439c87dd180be9d28
     layerID: 66
     mosaicPosition: {x: 0, y: 0}
   - name: Leg2_voor
@@ -6543,7 +6543,7 @@ ScriptedImporter:
     spriteName: 
     isGroup: 1
     parentIndex: 0
-    spriteID: 00000000000000000000000000000000
+    spriteID: de3db32b7dabe7f41926a567b9d5d30d
     layerID: 62
     mosaicPosition: {x: 0, y: 0}
   - name: Leg2_achter
