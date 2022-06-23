@@ -1397,7 +1397,7 @@ MonoBehaviour:
   target: {fileID: 429616976}
   activateDistance: 50
   pathUpdateSeconds: 0.5
-  speed: 0
+  speed: 305
   nextWaypointDistance: 3
   jumpNodeHeightRequirement: 0.8
   jumpModifier: 0.3
