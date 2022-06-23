@@ -5,6 +5,8 @@ using UnityEngine.UI;
 
 public class RepairBar : MonoBehaviour
 {
+    public GameObject repairedShip;
+    public GameObject brokenShip;
     public Slider slider;
     public pickUp pickUp;
 
@@ -34,7 +36,11 @@ public class RepairBar : MonoBehaviour
                 item.SetActive(false);
             }
         }
-
+        if (progress == 4)
+        {
+            repairedShip.SetActive(true);
+            brokenShip.SetActive(false);
+        }
 
     }
 }

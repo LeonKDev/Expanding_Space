@@ -46,5 +46,9 @@ public class animation: MonoBehaviour
         {
             animator.SetBool("jump", false);
         }
+        if (Input.GetKey(KeyCode.D) && (Input.GetKey(KeyCode.A)))
+        {
+            animator.SetFloat("speed", 0.01f);
+        }
     }
 }
