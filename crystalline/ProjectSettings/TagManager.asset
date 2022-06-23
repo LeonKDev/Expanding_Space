@@ -15,6 +15,7 @@ TagManager:
   - interactable
   - floor
   - Enemy
+  - light
   layers:
   - Default
   - TransparentFX

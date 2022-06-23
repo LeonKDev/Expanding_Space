@@ -69,11 +69,11 @@ public class EnemyAI : MonoBehaviour
         Vector3 startOffset = transform.position - new Vector3(0f, GetComponent<Collider2D>().bounds.extents.y + jumpCheckOffset);
         isGrounded = Physics2D.Raycast(startOffset, -Vector3.up, 0.05f);
 
-        // Direction Calculation
+        // directie
         Vector2 direction = ((Vector2)path.vectorPath[currentWaypoint] - rb.position).normalized;
         Vector2 force = direction * speed * Time.deltaTime;
 
-        // Jump
+        // springen
         if (jumpEnabled && isGrounded)
         {
             if (direction.y > jumpNodeHeightRequirement)
@@ -92,7 +92,7 @@ public class EnemyAI : MonoBehaviour
             currentWaypoint++;
         }
 
-        // Direction Graphics Handling
+        // roteren
         if (directionLookEnabled)
         {
             if (rb.velocity.x > 0.05f)
@@ -117,6 +117,13 @@ public class EnemyAI : MonoBehaviour
         {
             path = p;
             currentWaypoint = 0;
+        }
+    }
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.gameObject.tag == "light")
+        {
+            speed = -100f;
         }
     }
 }

@@ -65,6 +65,7 @@ public class crystal : MonoBehaviour
             nonActiveCrystal.SetActive(false);
             activeCrystal.SetActive(true);
             
+
         }
         else
         {
