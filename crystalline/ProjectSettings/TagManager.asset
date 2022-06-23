@@ -14,12 +14,12 @@ TagManager:
   - Item3
   - interactable
   - floor
-
+  - Enemy
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - Ground
   - Water
   - UI
   - 
