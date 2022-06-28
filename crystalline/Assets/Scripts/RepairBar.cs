@@ -25,13 +25,13 @@ public class RepairBar : MonoBehaviour
     
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.gameObject.tag == "Player" && pickUp.pickedUp == true)
+        if (other.gameObject.tag == "Player" && pickUp.pickedUp)
         {
             pickUp.pickedUp = false;
             progress += 1;
             slider.value = progress;
             Debug.Log("oui");
-            if (pickUp.pickedUp == false)
+            if (!pickUp.pickedUp)
             {
                 item.SetActive(false);
             }

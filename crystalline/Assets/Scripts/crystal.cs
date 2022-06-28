@@ -11,6 +11,7 @@ public class crystal : MonoBehaviour
 
     private bool isCrystalActive;
     private float lastInteractionTime = -10;
+    private bool haveEnergy;
 
     public float energy;
     float maxEnergy;
@@ -37,20 +38,25 @@ public class crystal : MonoBehaviour
             DecreaseEnergy();
         }
 
-        if (Input.GetMouseButtonDown(1))
+        if (Input.GetMouseButtonDown(1) && haveEnergy == true)
         {
             SwitchCrystal();
-            
-
         }
-        if (energy < 0.00)
+
+        if (energy > 0)
         {
+            haveEnergy = true;
+        }
+
+        if (energy < 0 && haveEnergy == true)
+        {
+            haveEnergy = false;
             SwitchCrystal();
         }   
     }
     private void DecreaseEnergy()
     {
-        if (energy > 0)
+        if (energy > 0.01)
             energy -= dValue * Time.deltaTime;
     }
 
