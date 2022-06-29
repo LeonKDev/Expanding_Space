@@ -30,7 +30,7 @@ public class Deur : MonoBehaviour
         {
             if (Input.GetKeyDown(KeyCode.E))
             {
-                SceneManager.LoadScene(1);
+                SceneManager.LoadScene(2);
             }
         }
        
