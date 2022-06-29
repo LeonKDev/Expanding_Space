@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.SceneManagement;
-public class Deur : MonoBehaviour
+public class Door : MonoBehaviour
 {
     public bool IsInRange;
     
@@ -31,6 +31,13 @@ public class Deur : MonoBehaviour
             if (Input.GetKeyDown(KeyCode.E))
             {
                 SceneManager.LoadScene(2);
+            }
+
+
+
+            if (Input.GetKeyDown(KeyCode.Q))
+            {
+                SceneManager.LoadScene(1);
             }
         }
        
