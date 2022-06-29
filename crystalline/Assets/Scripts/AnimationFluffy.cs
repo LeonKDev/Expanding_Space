@@ -9,6 +9,7 @@ public class AnimationFluffy : MonoBehaviour
     public GameObject Death;
     public Animator animator;
     float prevSpeed;
+    private float Speeed = 1f;
 
 
     void Start()
@@ -27,12 +28,15 @@ public class AnimationFluffy : MonoBehaviour
         if (other.gameObject.tag == "Player")
         {
             Destroy(other.gameObject.GetComponent<movement>());
+            animator.SetBool("bite", true);
             animator.Play("Fluffy_springen_Attack_ Animation");
             other.gameObject.SetActive(false);
-            StartCoroutine(DeathAni());
-            Death.SetActive(true);
+            animator.SetBool("bite", false);
+            StartCoroutine(DeathScreen());
+            
         }
     }
+
     private void OnTriggerEnter2D(Collider2D other)
     {
         if (other.gameObject.tag == "light")
@@ -49,8 +53,11 @@ public class AnimationFluffy : MonoBehaviour
         prevSpeed = animator.speed;
         animator.speed = 1;
     }
-    private IEnumerator DeathAni()
+
+    IEnumerator DeathScreen()
     {
-        yield return new WaitForSeconds(2);
+        
+        yield return new WaitForSeconds(1f);
+        Death.SetActive(true);
     }
 }
