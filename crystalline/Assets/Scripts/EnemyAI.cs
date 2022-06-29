@@ -123,7 +123,14 @@ public class EnemyAI : MonoBehaviour
     {
         if (other.gameObject.tag == "light")
         {
-            speed = -100f;
+            speed = 0;
+            StartCoroutine(timer());
         }
+    }
+
+    private IEnumerator timer()
+    {
+        yield return new WaitForSeconds(3);
+        speed = 270f;
     }
 }
