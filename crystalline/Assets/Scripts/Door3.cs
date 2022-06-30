@@ -28,11 +28,7 @@ public class Door3 : MonoBehaviour
 
 
         {
-            if (Input.GetKeyDown(KeyCode.E))
-            {
-                SceneManager.LoadScene(4);
-            }
-
+            
 
 
             if (Input.GetKeyDown(KeyCode.Q))
@@ -58,6 +54,6 @@ public class Door3 : MonoBehaviour
     private void OnTriggerExit2D(Collider2D other)
     {
         IsInRange = false;
-        Debug.Log("Player is now in Range");
+        Debug.Log("Player is not in Range");
     }
 }
