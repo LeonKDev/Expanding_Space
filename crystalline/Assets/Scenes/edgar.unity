@@ -920,7 +920,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 711874442293879791, guid: f352184e29e6c254cabf45322d38f2b2, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 711874442293879791, guid: f352184e29e6c254cabf45322d38f2b2, type: 3}
       propertyPath: m_TagString
@@ -2001,8 +2001,8 @@ CapsuleCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.81, y: -1.29}
-  m_Size: {x: 22, y: 15.27}
+  m_Offset: {x: -0.80999917, y: 1.3883997}
+  m_Size: {x: 22.000004, y: 9.913285}
   m_Direction: 1
 --- !u!1 &1465040574
 GameObject:
@@ -2467,8 +2467,8 @@ MonoBehaviour:
   tagPenalties: 0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
   graphMask:
     value: -1
---- !u!58 &1726190589
-CircleCollider2D:
+--- !u!70 &1726190589
+CapsuleCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -2480,9 +2480,9 @@ CircleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  serializedVersion: 2
-  m_Radius: 3.51
+  m_Offset: {x: -0.05420372, y: 0.29999998}
+  m_Size: {x: 7.351627, y: 6.200034}
+  m_Direction: 1
 --- !u!114 &1726190590
 MonoBehaviour:
   m_ObjectHideFlags: 0

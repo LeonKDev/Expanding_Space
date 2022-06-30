@@ -25,28 +25,22 @@ namespace Pathfinding {
 
 		#region IAstarAI implementation
 
-		/// <summary>\copydoc Pathfinding::IAstarAI::Teleport</summary>
 		public override void Teleport (Vector3 newPosition, bool clearPath = true) {
 			reachedEndOfPath = false;
 			base.Teleport(newPosition, clearPath);
 		}
 
-		/// <summary>\copydoc Pathfinding::IAstarAI::remainingDistance</summary>
 		public float remainingDistance {
 			get {
 				return interpolator.valid ? interpolator.remainingDistance + movementPlane.ToPlane(interpolator.position - position).magnitude : float.PositiveInfinity;
 			}
 		}
-
-		/// <summary>\copydoc Pathfinding::IAstarAI::reachedDestination</summary>
 		public bool reachedDestination {
 			get {
 				if (!reachedEndOfPath) return false;
 				if (!interpolator.valid || remainingDistance + movementPlane.ToPlane(destination - interpolator.endPoint).magnitude > endReachedDistance) return false;
 
-				// Don't do height checks in 2D mode
 				if (orientation != OrientationMode.YAxisForward) {
-					// Check if the destination is above the head of the character or far below the feet of it
 					float yDifference;
 					movementPlane.ToPlane(destination - position, out yDifference);
 					var h = tr.localScale.y * height;
@@ -57,43 +51,31 @@ namespace Pathfinding {
 			}
 		}
 
-		/// <summary>\copydoc Pathfinding::IAstarAI::reachedEndOfPath</summary>
 		public bool reachedEndOfPath { get; protected set; }
 
-		/// <summary>\copydoc Pathfinding::IAstarAI::hasPath</summary>
 		public bool hasPath {
 			get {
 				return interpolator.valid;
 			}
 		}
 
-		/// <summary>\copydoc Pathfinding::IAstarAI::pathPending</summary>
 		public bool pathPending {
 			get {
 				return waitingForPathCalculation;
 			}
 		}
 
-		/// <summary>\copydoc Pathfinding::IAstarAI::steeringTarget</summary>
 		public Vector3 steeringTarget {
 			get {
 				return interpolator.valid ? interpolator.position : position;
 			}
 		}
-
-		/// <summary>\copydoc Pathfinding::IAstarAI::radius</summary>
 		float IAstarAI.radius { get { return radius; } set { radius = value; } }
 
-		/// <summary>\copydoc Pathfinding::IAstarAI::height</summary>
 		float IAstarAI.height { get { return height; } set { height = value; } }
-
-		/// <summary>\copydoc Pathfinding::IAstarAI::maxSpeed</summary>
 		float IAstarAI.maxSpeed { get { return maxSpeed; } set { maxSpeed = value; } }
-
-		/// <summary>\copydoc Pathfinding::IAstarAI::canSearch</summary>
 		bool IAstarAI.canSearch { get { return canSearch; } set { canSearch = value; } }
 
-		/// <summary>\copydoc Pathfinding::IAstarAI::canMove</summary>
 		bool IAstarAI.canMove { get { return canMove; } set { canMove = value; } }
 
 		#endregion
@@ -121,7 +103,19 @@ namespace Pathfinding {
 
 		public virtual void OnTargetReached () {
 		}
-
+		private void OnTriggerEnter2D(Collider2D other)
+		{
+			if (other.gameObject.tag == "light")
+			{
+				maxSpeed = 0;
+				StartCoroutine(timer());
+			}
+		}
+		private IEnumerator timer()
+		{
+			yield return new WaitForSeconds(3);
+			maxSpeed = 3f;
+		}
 		protected override void OnPathComplete (Path newPath) {
 			ABPath p = newPath as ABPath;
 
