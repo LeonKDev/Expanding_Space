@@ -2,13 +2,13 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class AnimationFluffy : MonoBehaviour
+public class animation_siren : MonoBehaviour
 {
-    public GameObject fluffy;
+    public GameObject siren;
     public GameObject Death;
     public Animator animator;
     float prevSpeed;
-    private float Speeed = 1f;
+    private float floating = 1f;
 
 
     void Start()
@@ -21,12 +21,12 @@ public class AnimationFluffy : MonoBehaviour
         if (other.gameObject.tag == "Player")
         {
             Destroy(other.gameObject.GetComponent<movement>());
-            animator.SetBool("bite", true);
-            animator.Play("Fluffy_springen_Attack_ Animation");
+            animator.SetBool("scratch", true);
+            animator.Play("Enemy_01_Animation_Attack");
             other.gameObject.SetActive(false);
-            animator.SetBool("bite", false);
+            animator.SetBool("scratch", false);
             StartCoroutine(DeathScreen());
-            
+
         }
     }
 
@@ -49,8 +49,9 @@ public class AnimationFluffy : MonoBehaviour
 
     IEnumerator DeathScreen()
     {
-        
-        yield return new WaitForSeconds(1f);
+
+        yield return new WaitForSeconds(2f);
         Death.SetActive(true);
     }
+
 }
