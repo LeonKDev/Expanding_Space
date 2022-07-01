@@ -7,7 +7,7 @@ namespace Pathfinding {
 	[HelpURL("http://arongranberg.com/astar/docs/class_pathfinding_1_1_a_i_destination_setter.php")]
 	public class AIDestinationSetter : VersionedMonoBehaviour {
         public Transform target;
-        public GameObject Target;
+        private GameObject Target;
 		IAstarAI ai;
 
         void Start()

@@ -37,7 +37,7 @@ public class Door2 : MonoBehaviour
 
             if (Input.GetKeyDown(KeyCode.Q))
             {
-                SceneManager.LoadScene(2);
+                SceneManager.LoadScene(1);
             }
         }
 

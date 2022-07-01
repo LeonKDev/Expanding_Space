@@ -28,12 +28,16 @@ public class Door3 : MonoBehaviour
 
 
         {
-            
+            if (Input.GetKeyDown(KeyCode.E))
+            {
+                SceneManager.LoadScene(4);
+            }
+
 
 
             if (Input.GetKeyDown(KeyCode.Q))
             {
-                SceneManager.LoadScene(3);
+                SceneManager.LoadScene(2);
             }
         }
 
