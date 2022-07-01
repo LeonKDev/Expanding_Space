@@ -18,8 +18,10 @@ public class ItemLoad : MonoBehaviour
         }
         if (level == 2)
         {
-            this.transform.position = GameObject.Find("deur_02").transform.position;
-            GameObject.Find("Main Camera").transform.position = GameObject.Find("deur_02").transform.position;
+            this.transform.position = GameObject.Find("spawnPlayer").transform.position;
+            this.transform.parent = GameObject.Find("Main Camera").transform.parent;
+            Debug.Log(GameObject.Find("Main Camera").transform.position);
+            GameObject.Find("Main Camera").transform.position = GameObject.Find("spawnCamera").transform.position;
             GameObject.Find("Main Camera").GetComponent<FollowPlayer>().player = this.gameObject;
         }
         
