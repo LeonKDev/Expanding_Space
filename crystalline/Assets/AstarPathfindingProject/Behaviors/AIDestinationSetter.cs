@@ -6,10 +6,17 @@ namespace Pathfinding {
 	[UniqueComponent(tag = "ai.destination")]
 	[HelpURL("http://arongranberg.com/astar/docs/class_pathfinding_1_1_a_i_destination_setter.php")]
 	public class AIDestinationSetter : VersionedMonoBehaviour {
-		public Transform target;
+        public Transform target;
+        public GameObject Target;
 		IAstarAI ai;
 
-		void OnEnable () {
+        void Start()
+        {
+			Target = GameObject.FindWithTag("Player");
+
+		}
+
+        void OnEnable () {
 			ai = GetComponent<IAstarAI>();
 
 			if (ai != null) ai.onSearchPath += Update;
@@ -19,7 +26,7 @@ namespace Pathfinding {
 			if (ai != null) ai.onSearchPath -= Update;
 		}
 		void Update () {
-			if (target != null && ai != null) ai.destination = target.position;
+			if (Target != null && ai != null) ai.destination = Target.transform.position;
 		}
 
 	}

@@ -498,9 +498,10 @@ GameObject:
   - component: {fileID: 711874442293879790}
   - component: {fileID: 711874442293879779}
   - component: {fileID: 711874442293879776}
+  - component: {fileID: 711874443132078843}
   m_Layer: 0
   m_Name: ActiveCrystal
-  m_TagString: Untagged
+  m_TagString: light
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -568,6 +569,22 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!70 &711874443132078843
+CapsuleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 711874442293879791}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.80999935, y: 0.16744943}
+  m_Size: {x: 22.000004, y: 12.355369}
+  m_Direction: 1
 --- !u!1 &711874442358985499
 GameObject:
   m_ObjectHideFlags: 0
