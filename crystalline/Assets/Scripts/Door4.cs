@@ -3,15 +3,14 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.SceneManagement;
-public class Door : MonoBehaviour
+public class Door4 : MonoBehaviour
 {
     public bool IsInRange;
-    public GameObject Player;
-    
-    
-   void Start()
+
+
+    void Start()
     {
-        
+
     }
 
 
@@ -26,23 +25,21 @@ public class Door : MonoBehaviour
     void Update()
     {
         if (IsInRange)
-        
+
 
         {
-            if (Input.GetKeyDown(KeyCode.E))
+
+
+
+            if (Input.GetKeyDown(KeyCode.Q))
             {
-                
-                SceneManager.LoadScene(2);
+                SceneManager.LoadScene(3);
             }
-
-
-
-           
         }
-       
 
-        
-      
+
+
+
 
     }
 

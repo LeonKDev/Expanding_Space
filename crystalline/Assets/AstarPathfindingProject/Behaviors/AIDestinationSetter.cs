@@ -5,10 +5,17 @@ namespace Pathfinding {
 
 	[UniqueComponent(tag = "ai.destination")]
 	public class AIDestinationSetter : VersionedMonoBehaviour {
-		public Transform target;
+        public Transform target;
+        private GameObject Target;
 		IAstarAI ai;
 
-		void OnEnable () {
+        void Start()
+        {
+			Target = GameObject.FindWithTag("Player");
+
+		}
+
+        void OnEnable () {
 			ai = GetComponent<IAstarAI>();
 
 			if (ai != null) ai.onSearchPath += Update;
@@ -18,7 +25,7 @@ namespace Pathfinding {
 			if (ai != null) ai.onSearchPath -= Update;
 		}
 		void Update () {
-			if (target != null && ai != null) ai.destination = target.position;
+			if (Target != null && ai != null) ai.destination = Target.transform.position;
 		}
 
 	}

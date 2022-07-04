@@ -61,7 +61,7 @@ public class movement : MonoBehaviour
                 rb.velocity = new Vector3(0, jumpPower, 0);
         }
     }
-    private void OnTriggerEnter2D(Collider2D other)
+    private void OnTriggerStay2D(Collider2D other)
     {
         if(other.gameObject.tag == "floor")
         {

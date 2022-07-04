@@ -43,12 +43,12 @@ public class crystal : MonoBehaviour
             SwitchCrystal();
         }
 
-        if (energy > 0)
+        if (energy > 0.1)
         {
             haveEnergy = true;
         }
 
-        if (energy < 0 && haveEnergy == true)
+        if (energy < 0.1 && haveEnergy == true)
         {
             haveEnergy = false;
             SwitchCrystal();
