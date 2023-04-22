@@ -26,6 +26,11 @@ namespace Pathfinding {
 			if (ai != null) ai.onSearchPath -= Update;
 		}
 		void Update () {
+			Target = GameObject.FindWithTag("Player");
+			if(Target == null)
+            {
+				Target = GameObject.Find("Player");
+            }
 			if (Target != null && ai != null) ai.destination = Target.transform.position;
 		}
 

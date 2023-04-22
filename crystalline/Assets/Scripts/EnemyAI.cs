@@ -22,6 +22,7 @@ public class EnemyAI : MonoBehaviour
     public bool jumpEnabled = true;
     public bool directionLookEnabled = true;
 
+    private GameObject Target;
     private Path path;
     private int currentWaypoint = 0;
     RaycastHit2D isGrounded;
@@ -30,6 +31,7 @@ public class EnemyAI : MonoBehaviour
 
     public void Start()
     {
+        Target = GameObject.FindWithTag("Player");
         seeker = GetComponent<Seeker>();
         rb = GetComponent<Rigidbody2D>();
 

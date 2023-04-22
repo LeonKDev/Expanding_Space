@@ -7,6 +7,8 @@ public class RepairBar : MonoBehaviour
 {
     public GameObject repairedShip;
     public GameObject brokenShip;
+    public GameObject endScreen;
+    public GameObject sound;
     public Slider slider;
     public pickUp pickUp;
 
@@ -23,7 +25,7 @@ public class RepairBar : MonoBehaviour
     }
     // Update is called once per frame
     
-    private void OnTriggerEnter2D(Collider2D other)
+    private void OnTriggerStay2D(Collider2D other)
     {
         if (other.gameObject.tag == "Player" && pickUp.pickedUp)
         {
@@ -40,6 +42,11 @@ public class RepairBar : MonoBehaviour
         {
             repairedShip.SetActive(true);
             brokenShip.SetActive(false);
+        }
+        if (progress == 4 && Input.GetKey(KeyCode.E))
+        {
+            endScreen.SetActive(true);
+            sound.SetActive(false);
         }
 
     }
