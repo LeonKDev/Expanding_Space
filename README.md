@@ -11,6 +11,7 @@ In this project, we aimed to create a space-themed game. We ended up with a game
 
 ### Bas:
 - Teleportation door.
+- Light for crystal orb.
 
 ### Edgar:
 - Enemy AI.
