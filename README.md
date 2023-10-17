@@ -1,11 +1,16 @@
-"# Expanding_Space" 
+# Expanding Space
 
-In this project, we intended to create a space-themed game.
-We ended up with a game where the player must collect items to repair their crashed ship on an alien planet while avoiding enemies.
-To aid in dodging enemies, the player can activate a crystal that freezes them
+In this project, we aimed to create a space-themed game. We ended up with a game where the player must collect items to repair their crashed ship on an alien planet while avoiding enemies. To help with dodging enemies, the player can activate a crystal that freezes them.
 
-Our Contribution
+## Our Contribution
 
-Leon:
-PLayer Movement.
-Crystal Orb.
+### Leon:
+- Player Movement.
+- Crystal Orb.
+- Ship repair mechanic.
+
+### Bas:
+- Teleportation door.
+
+### Edgar:
+- Enemy AI.
